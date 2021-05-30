@@ -1,9 +1,11 @@
 # ec2_metadata
 EC2 Metadata in JSON format using the "go" language
 
-run the "ec2_metadata.go" file from the any AWS EC2 instance to get the metadata in JSON format.
+**run the "ec2_metadata.go" file from the any AWS EC2 instance to get the metadata in JSON format.
+**
 
 root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata# **go run ec2_metadata.go --prettyprint**
+
 {
   "ami-id": "ami-0a9e98c890b11cb9c",
   "ami-launch-index": "0",
