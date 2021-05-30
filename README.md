@@ -10,8 +10,10 @@ README.md  ec2_metadata.go
 
 
 
-root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata# go run ec2_metadata.go --prettyprint
-	{
+**root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata# go run ec2_metadata.go --prettyprint
+**
+
+	**{
 	  "ami-id": "ami-0a9e98c890b11cb9c",
 	  "ami-launch-index": "0",
 	  "ami-manifest-path": "(unknown)",
@@ -88,3 +90,4 @@ root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata# go run ec2_metadata.go --
 		"partition": "aws"
 	  }
 	}
+**
