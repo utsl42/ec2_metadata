@@ -8,6 +8,7 @@ EC2 Metadata in JSON format using the "go" language
 
 
 root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata/ec2_metadata# ls
+
 README.md  ec2_metadata.go
 
 
@@ -16,6 +17,7 @@ README.md  ec2_metadata.go
 
 **root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata# go run ec2_metadata.go --prettyprint
 **
+
 
 	**{
 	  "ami-id": "ami-0a9e98c890b11cb9c",
