@@ -4,6 +4,10 @@ EC2 Metadata in JSON format using the "go" language
 **run the "ec2_metadata.go" file from the any AWS EC2 instance to get the metadata in JSON format.
 **
 
+
+root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata/ec2_metadata# ls
+README.md  ec2_metadata.go
+
 root@ip-172-31-36-145:/home/ubuntu/wipro/ec2_metadata# **go run ec2_metadata.go --prettyprint**
 
 {
