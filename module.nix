@@ -2,7 +2,8 @@
 let
   inherit (lib) mkEnableOption mkIf mkOption;
   cfg = config.services.ec2-metadata;
-  {
+in
+{
   options = {
     services.ec2-metadata = {
       enable = mkEnableOption (lib.mdDoc "EC2 instance metadata retriever");
@@ -33,4 +34,4 @@ let
       '';
     };
   };
-  }
+}
