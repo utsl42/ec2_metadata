@@ -24,13 +24,17 @@ in
         Restart = "on-failure";
         RestartSec = "20s";
       };
-      path = with pkgs; [ ec2_metadata ];
+      path = with pkgs; [ ec2_metadata jc ];
       script = ''
         set -euo pipefail
 
         echo "Retrieving EC2 metadata"
         ec2_metadata > /etc/nixos/instance.json
-        echo "Saved EC2 metadata to /etc/nixos/instance/json"
+        echo "Saved EC2 metadata to /etc/nixos/instance.json"
+
+        echo "Retrieving /proc/meminfo data"
+        jc /proc/meminfo > /etc/nixos/meminfo.json
+        echo "Saved /proc/meminfo data to /etc/nixos/meminfo.json"
       '';
     };
   };
